@@ -307,7 +307,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-4 no-pad-top">Method</label>
                                         <div class="col-md-8">
-                                            @Html.DropDownList("TransactionMethod", EnumHelper.GetSelectList(typeof(Billing.ViewModel.PaymentMethod)), "Payment Method", new { @class = "form-control", id = "TransactionMethod", required = "required" })
+                                            @Html.DropDownList("TransactionMethod", EnumHelper.GetSelectList(typeof(Billing.Entities.PaymentMethod)), "Payment Method", new { @class = "form-control", id = "TransactionMethod", required = "required" })
                                         </div>
                                     </div>
                                 </div>
@@ -325,7 +325,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-4 no-pad-top">Bank</label>
                                         <div class="col-md-8">
-                                            @Html.DropDownList("BankId", EnumHelper.GetSelectList(typeof(Billing.ViewModel.BankName)), "Select Bank", new { @class = "form-control" })
+                                            @Html.DropDownList("BankId", EnumHelper.GetSelectList(typeof(Billing.Entities.BankName)), "Select Bank", new { @class = "form-control" })
                                         </div>
                                     </div>
                                 </div>
@@ -361,7 +361,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-4 no-pad-top">Bank Account</label>
                                         <div class="col-md-8">
-                                            @Html.DropDownList("BankNames", EnumHelper.GetSelectList(typeof(Billing.ViewModel.BankName)), "Deposit In", new { @class = "form-control", id = "BankNames", onchange = "return getBankAccounts()" })
+                                            @Html.DropDownList("BankNames", EnumHelper.GetSelectList(typeof(Billing.Entities.BankName)), "Deposit In", new { @class = "form-control", id = "BankNames", onchange = "return getBankAccounts()" })
                                         </div>
                                     </div>
                                 </div>
@@ -408,7 +408,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-4 no-pad-top">Bank Account</label>
                                         <div class="col-md-8">
-                                            @Html.DropDownList("BankNames", EnumHelper.GetSelectList(typeof(Billing.ViewModel.BankName)), "Deposit In", new { @class = "form-control", id = "BankNamesDebitCard", onchange = "return getBankAccountsDebitCard()" })
+                                            @Html.DropDownList("BankNames", EnumHelper.GetSelectList(typeof(Billing.Entities.BankName)), "Deposit In", new { @class = "form-control", id = "BankNamesDebitCard", onchange = "return getBankAccountsDebitCard()" })
                                         </div>
                                     </div>
                                 </div>
@@ -455,7 +455,7 @@
                                     <div class="form-group">
                                         <label class="control-label col-md-4 no-pad-top">Bank Account</label>
                                         <div class="col-md-8">
-                                            @Html.DropDownList("BankNames", EnumHelper.GetSelectList(typeof(Billing.ViewModel.BankName)), "Deposit In", new { @class = "form-control", id = "BankNamesBankDeposit", onchange = "return getBankAccountsBankDeposit()" })
+                                            @Html.DropDownList("BankNames", EnumHelper.GetSelectList(typeof(Billing.Entities.BankName)), "Deposit In", new { @class = "form-control", id = "BankNamesBankDeposit", onchange = "return getBankAccountsBankDeposit()" })
                                         </div>
                                     </div>
                                 </div>
